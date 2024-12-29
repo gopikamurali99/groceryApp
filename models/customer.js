@@ -1,4 +1,4 @@
-import mongoose, { model } from 'mongoose';
+import mongoose from 'mongoose';
 
 const UserSchema = new mongoose.Schema({
     name:{
@@ -26,7 +26,7 @@ const UserSchema = new mongoose.Schema({
     createdAt: {
         type: Date,
         default: Date.now,
-        expires: 300, // OTP expires after 5 minutes (300 seconds)
+       
     },
     verified: {
         type: Boolean,

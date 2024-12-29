@@ -14,11 +14,19 @@ const Grocery = new mongoose.Schema({
         enum:['kg','liters','ml','pcs','pack'],
         default:'pcs',
       },
+      category:{
+           type:String,
+           enum: ['vegetables', 'beverages','fruits','other'],
+      },
+      price:{
+          type:Number,
+      },
       purchased:{
         type:Boolean,
         default:false,
 
       },
+
 })
 //Grocerry List Schema
 
